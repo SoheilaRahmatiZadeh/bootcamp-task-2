@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="transaction-form">
+        <!-- form header -->
+        <div class="transactions-form__header">
+          <h1>لیست تراکنش ها</h1>
+          <input
+            class="input__search hidden"
+            placeholder="جستجوی تراکنش &#xf002;"
+            style="font-family: FontAwesome, Arial; font-style: normal"
+            value=""
+          />
+        </div>
+
+        <button class="btn__load-transactions">بارگذاری تراکنش ها</button>
+
+        <!-- form body -->
+        <section class="transactions-list__section hidden">
+          <div class="transactions-list__title">لیست تراکنش های شما</div>
+          <!-- transactions list -->
+          <table class="list__content">
+            <!-- <tr class="list__content-header">
+                <th>ردیف</th>
+                <th>نوع تراکنش</th>
+                <th>
+                  <span>مبلغ</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </th>
+                <th>شماره پیگیری</th>
+                <th>
+                  <span>تاریخ تراکنش</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </th>
+              </tr> -->
+
+            <!-- one Item for trancation  -->
+            <!-- <tr class="list__content-item">
+                <td>25</td>
+                <td class="transaction-type green">افزایش اعتبار</td>
+                <td>1,000,000</td>
+                <td>123126411</td>
+                <td>۱۳۹۹/۰۸/۱۲-12:23</td>
+              </tr> -->
+            <!-- end of one item -->
+          </table>
+        </section>
+      </div>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
